@@ -19,8 +19,8 @@ a {
     height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0fr 1.5fr 1.2fr 0.8fr;
-    grid-column-gap: 0.2rem;
-    grid-row-gap: 0.2rem;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
     padding: 50px;
     grid-template-areas: "header header header header" "sidebar maincontent maincontent maincontent" "sidebar content1 content2 content3" "sidebar footer footer footer";
     font-family: 'Montserrat', sans-serif;
@@ -74,8 +74,48 @@ header {
     border-top: 5px;
 }
 
+
+/* sidebar */
+
 #sidebar {
     grid-area: sidebar;
+    background-color: #343a40;
+    color: #c9ada7;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    text-align: center;
+}
+
+.contact p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #c9ada7;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.contactinfo p {
+    text-align: center;
+    grid-area: sidebar;
+    color: #c9ada7;
+}
+
+.education p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #c9ada7;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.educationinfo p {
+    text-align: center;
+    grid-area: sidebar;
+    color: #c9ada7;
 }
 
 #maincontent {
@@ -95,11 +135,9 @@ header {
 }
 
 .sidecontent {
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
     font-size: 30px;
     text-align: center;
-    background-color: purple;
+    background-color: #343a40;
 }
 
 .content-item {
