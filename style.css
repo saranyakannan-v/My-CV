@@ -11,6 +11,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #grid-container {
@@ -18,7 +19,7 @@ a {
     display: grid;
     height: 200vh;
     grid-template-columns: 0.4fr 1fr;
-    grid-template-rows: 0fr 1.5fr 0.2fr;
+    grid-template-rows: 0fr 0.8fr 0.1fr;
     grid-column-gap: 0.1rem;
     grid-row-gap: 0.1rem;
     padding: 50px;
@@ -192,12 +193,35 @@ header {
     color: #343a40;
 }
 
+.interest p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #343a40;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.interestinfo p {
+    text-align: left;
+    grid-area: sidebar;
+    color: #343a40;
+}
+
 
 /*Footer*/
 
 footer {
-    background-color: #3c3;
+    background-color: white;
     grid-area: footer;
+    color: black;
+}
+
+.footerinfo a {
+    text-align: left;
+    grid-area: footer;
+    color: black;
 }
 
 
@@ -206,7 +230,7 @@ footer {
 @media only screen and (max-width: 550px) {
     #grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: .2fr 5fr 5fr 5fr 5fr 8fr 8fr 1fr;
-        grid-template-areas: "header" "sidebar" "content1" "content2" "content3" "footer";
+        grid-template-rows: .2fr 5fr 5fr 5fr;
+        grid-template-areas: "header" "maincontent" "sidebar" "footer";
     }
 }
