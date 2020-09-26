@@ -17,12 +17,12 @@ a {
     background-color: #c9ada7;
     display: grid;
     height: 200vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0fr 1.5fr 1.2fr 0.8fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0fr 1.5fr 0.2fr;
     grid-column-gap: 0.1rem;
     grid-row-gap: 0.1rem;
     padding: 50px;
-    grid-template-areas: "header header header header" "sidebar maincontent maincontent maincontent" "sidebar content1 content2 content3" "sidebar footer footer footer";
+    grid-template-areas: "header header header header" "sidebar maincontent maincontent maincontent" "sidebar footer footer footer";
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 }
@@ -83,7 +83,6 @@ header {
     color: #c9ada7;
     font-family: "Times New Roman", Times, serif;
     font-size: large;
-    text-align: center;
 }
 
 .contact p {
@@ -118,35 +117,79 @@ header {
     color: #c9ada7;
 }
 
+.lang p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #c9ada7;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.langinfo p {
+    text-align: left;
+    grid-area: sidebar;
+    color: #c9ada7;
+}
+
+
+/*Main content*/
+
 #maincontent {
     grid-area: maincontent;
+    background-color: white;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    text-align: left;
 }
 
-#content1 {
-    grid-area: content1;
-}
-
-#content2 {
-    grid-area: content2;
-}
-
-#content3 {
-    grid-area: content3;
-}
-
-.sidecontent {
-    font-size: 30px;
+.profile p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #343a40;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
     text-align: center;
-    background-color: #343a40;
 }
 
-.content-item {
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
+.profileinfo p {
+    grid-area: sidebar;
+    color: #c9ada7;
+}
+
+.experience p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #343a40;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
     text-align: center;
+}
+
+.experienceinfo p {
+    text-align: center;
+    grid-area: sidebar;
+    color: #343a40;
+}
+
+.skill p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #343a40;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.skillinfo p {
+    text-align: left;
+    grid-area: sidebar;
+    color: #343a40;
 }
 
 
