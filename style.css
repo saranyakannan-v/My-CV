@@ -13,19 +13,14 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-}
-
 #grid-container {
-    background-color: skyblue;
+    background-color: #c9ada7;
     display: grid;
-    height: 100vh;
+    height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .2fr 1.5fr 1.2fr 0.8fr;
-    grid-column-gap: 4rem;
-    grid-row-gap: 2rem;
+    grid-template-rows: 0fr 1.5fr 1.2fr 0.8fr;
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 0.2rem;
     padding: 50px;
     grid-template-areas: "header header header header" "sidebar maincontent maincontent maincontent" "sidebar content1 content2 content3" "sidebar footer footer footer";
     font-family: 'Montserrat', sans-serif;
@@ -36,10 +31,47 @@ a {
 /* Header */
 
 header {
-    background-color: #0d7b67;
+    background-color: #343a40;
     grid-area: header;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+    display: grid;
+    grid-template-rows: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Text h1 {
+    grid-area: header;
+    text-align: center;
+    color: #c9ada7;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Text h3 {
+    grid-area: header;
+    text-align: center;
+    color: #c9ada7;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Image */
+
+.rounded {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #343a40;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image {
+    padding-left: 2em;
+    border-top: 5px;
 }
 
 #sidebar {
