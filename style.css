@@ -10,8 +10,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    color: blue;
 }
 
 #grid-container {
@@ -97,7 +96,7 @@ header {
 }
 
 .contactinfo p {
-    text-align: center;
+    text-align: left;
     grid-area: sidebar;
     color: #c9ada7;
 }
@@ -113,7 +112,7 @@ header {
 }
 
 .educationinfo p {
-    text-align: center;
+    text-align: left;
     grid-area: sidebar;
     color: #c9ada7;
 }
@@ -146,7 +145,7 @@ header {
     text-align: left;
 }
 
-.profile p {
+.ps p {
     grid-area: sidebar;
     border-radius: 25px;
     border: 2px solid #343a40;
@@ -156,7 +155,22 @@ header {
     text-align: center;
 }
 
-.profileinfo p {
+.psinfo p {
+    grid-area: sidebar;
+    color: black;
+}
+
+.skill p {
+    grid-area: sidebar;
+    border-radius: 25px;
+    border: 2px solid #343a40;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.skillinfo p {
     grid-area: sidebar;
     color: #c9ada7;
 }
@@ -173,22 +187,6 @@ header {
 
 .experienceinfo p {
     text-align: center;
-    grid-area: sidebar;
-    color: #343a40;
-}
-
-.skill p {
-    grid-area: sidebar;
-    border-radius: 25px;
-    border: 2px solid #343a40;
-    padding: 10px;
-    width: 100px;
-    height: 20px;
-    text-align: center;
-}
-
-.skillinfo p {
-    text-align: left;
     grid-area: sidebar;
     color: #343a40;
 }
@@ -216,12 +214,15 @@ footer {
     background-color: white;
     grid-area: footer;
     color: black;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .footerinfo a {
+    background-color: white;
     text-align: left;
     grid-area: footer;
-    color: black;
+    color: blue;
+    font-family: "Times New Roman", Times, serif;
 }
 
 
