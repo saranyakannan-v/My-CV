@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 ul {
@@ -23,9 +23,12 @@ a {
     grid-row-gap: 0.1rem;
     padding: 50px;
     grid-template-areas: "header header header header" "sidebar maincontent maincontent maincontent" "sidebar footer footer footer";
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 100;
 }
+
+
+/* Grid items*/
 
 
 /* Header */
@@ -35,7 +38,7 @@ header {
     grid-area: header;
     display: grid;
     grid-template-rows: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .Text h1 {
