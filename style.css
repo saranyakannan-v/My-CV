@@ -86,6 +86,7 @@ header {
     color: #c9ada7;
     font-family: "Times New Roman", Times, serif;
     font-size: large;
+    padding-left: 15px;
 }
 
 .contact p {
@@ -102,6 +103,7 @@ header {
     text-align: left;
     grid-area: sidebar;
     color: #c9ada7;
+    padding-left: 15px;
 }
 
 .education p {
@@ -118,6 +120,7 @@ header {
     text-align: left;
     grid-area: sidebar;
     color: #c9ada7;
+    padding-left: 15px;
 }
 
 .lang p {
@@ -134,6 +137,7 @@ header {
     text-align: left;
     grid-area: sidebar;
     color: #c9ada7;
+    padding-left: 15px;
 }
 
 
@@ -146,6 +150,7 @@ header {
     font-family: "Times New Roman", Times, serif;
     font-size: large;
     text-align: left;
+    padding-left: 15px;
 }
 
 .ps p {
@@ -218,6 +223,7 @@ footer {
     grid-area: footer;
     color: black;
     font-family: "Times New Roman", Times, serif;
+    padding-left: 15px;
 }
 
 .footerinfo a {
